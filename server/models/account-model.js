@@ -1,6 +1,7 @@
 const mongoose = require('mongoose')
 
 const accountScheme = new mongoose.Schema({
+    accountNumber: { type: String, required: true },
     broker: { type: String, required: true },
     initialBalance: { type: String, required: true },
     currentBalance: { type: String, required: true },
