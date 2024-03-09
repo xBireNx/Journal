@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken');
-const JWT_SECRET_KEY = 'your_secret_key';
+// const JWT_SECRET_KEY = 'your_secret_key';
 
 exports.generateToken(userId) {
     return jwt.sign({ userId }, JWT_SECRET_KEY, { expiresIn: '1h' });
